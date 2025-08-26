@@ -1,0 +1,9 @@
+Best model: lr
+Chosen threshold: 0.2
+Test Accuracy: 0.8843
+Test Precision: 0.7000
+Test Recall: 0.2349
+Test F1: 0.3518
+AUC-PR: 0.38485962519690353
+AUC-ROC: 0.6130031820139785
+Confusion Matrix: [[951, 15], [114, 35]]

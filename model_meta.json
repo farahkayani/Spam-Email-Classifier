@@ -1,0 +1,90 @@
+{
+  "best_model": "lr",
+  "chosen_threshold": 0.2,
+  "selection_summary": {
+    "nb": {
+      "val_threshold": 0.2,
+      "val_precision": 0.5882352941176471,
+      "val_recall": 0.25,
+      "val_f1": 0.3508771929824561
+    },
+    "lr": {
+      "val_threshold": 0.2,
+      "val_precision": 0.8571428571428571,
+      "val_recall": 0.25,
+      "val_f1": 0.3870967741935484
+    },
+    "svm": {
+      "val_threshold": -1.0,
+      "val_precision": 0.9230769230769231,
+      "val_recall": 0.2,
+      "val_f1": 0.3287671232876712
+    }
+  },
+  "vectorizer": {
+    "max_features": 30000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.9,
+    "stop_words": "english"
+  },
+  "splits": {
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "metrics_test": {
+    "model_name": "best_lr",
+    "threshold": 0.2,
+    "accuracy": 0.884304932735426,
+    "precision": 0.7,
+    "recall": 0.2348993288590604,
+    "f1": 0.35175879396984927,
+    "auc_pr": 0.38485962519690353,
+    "auc_roc": 0.6130031820139785,
+    "confusion_matrix": [
+      [
+        951,
+        15
+      ],
+      [
+        114,
+        35
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.8929577464788733,
+        "recall": 0.984472049689441,
+        "f1-score": 0.9364844903988183,
+        "support": 966.0
+      },
+      "1": {
+        "precision": 0.7,
+        "recall": 0.2348993288590604,
+        "f1-score": 0.35175879396984927,
+        "support": 149.0
+      },
+      "accuracy": 0.884304932735426,
+      "macro avg": {
+        "precision": 0.7964788732394366,
+        "recall": 0.6096856892742507,
+        "f1-score": 0.6441216421843338,
+        "support": 1115.0
+      },
+      "weighted avg": {
+        "precision": 0.8671723615234005,
+        "recall": 0.884304932735426,
+        "f1-score": 0.8583462583199695,
+        "support": 1115.0
+      }
+    },
+    "plots": {
+      "confusion_matrix": "artifacts\\best_lr_confusion_matrix.png",
+      "pr_curve": "artifacts\\best_lr_pr_curve.png",
+      "roc_curve": "artifacts\\best_lr_roc_curve.png"
+    }
+  }
+}
